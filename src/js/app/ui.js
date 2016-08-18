@@ -15,6 +15,8 @@ var keyboardShortcuts = [
         [ 'mod+u',       function(){  document.execCommand('underline',false,null);  }]
     ];
     
+    //note, oT.player.skipTime should set how far forward/back each skip goes
+    
     $.each(keyboardShortcuts, function(i,m){
         Mousetrap.bind(m[0], function(e) {
             if (e.preventDefault) {
